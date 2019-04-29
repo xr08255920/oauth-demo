@@ -12,11 +12,7 @@
 </head>
 <body>
 <%
-    if (session.getAttribute("account") != null){
         response.sendRedirect("/user_info");
-    }else{
-        response.sendRedirect("/login");
-    }
 %>
 </body>
 </html>

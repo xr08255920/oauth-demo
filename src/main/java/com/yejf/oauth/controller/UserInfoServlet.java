@@ -11,8 +11,8 @@ import java.io.IOException;
 public class UserInfoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.getSession().getAttribute("account") == null){
-            resp.sendRedirect("/");
+        if (req.getSession().getAttribute("userInfo") == null){
+            resp.sendRedirect("/login");
         }else{
             req.getRequestDispatcher("/WEB-INF/page/user_info.jsp").forward(req,resp);
         }

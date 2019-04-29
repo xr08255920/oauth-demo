@@ -12,7 +12,13 @@
 </head>
 <body>
 <div >
-    <div style="display: inline;">百度</div>
+    <div style="display: inline;"><a href="https://openapi.baidu.com/oauth/2.0/authorize?
+	response_type=code&
+	client_id=gkTh2xPm81Qoe7e5d6oczTYf&
+	redirect_uri=http://localhost:8080/baiduAuth&
+	scope=basic&
+	display=popup&
+confirm_login=1">百度</a></div>
     <div style="display: inline;"> qq</div>
     <div style="display: inline;">微信</div>
 </div>
